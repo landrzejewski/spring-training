@@ -1,0 +1,17 @@
+{
+  "app.show-accounts": "Show accounts",
+  "app.dispositions": "Dispositions",
+  "accounts-list.accountNumber": "Account number",
+  "accounts-list.balance": "Balance",
+  "accounts-list.previous": "Previous",
+  "accounts-list.next": "Next",
+  "accounts-list.createAccount": "Create account",
+  "disposition.title": "Disposition",
+  "disposition.accountNumber": "Account number:",
+  "disposition.funds": "Funds:",
+  "disposition.operationType": "Operation type:",
+  "disposition.deposit": "Deposit",
+  "disposition.withdraw": "Withdraw",
+  "disposition.cancel": "Cancel",
+  "disposition.confirm": "Confirm"
+}

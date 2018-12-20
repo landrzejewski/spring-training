@@ -1,10 +1,10 @@
-<button class="btn btn-outline-primary btn-sm float-right" (click)="createAccount()">Create account</button>
+<button class="btn btn-outline-primary btn-sm float-right" (click)="createAccount()">{{'accounts-list.createAccount' | translate}}</button>
 <div *ngIf="resultPage">
   <table class="table">
     <thead>
     <tr>
-      <th>Account number</th>
-      <th>Balance</th>
+      <th>{{'accounts-list.accountNumber' | translate}}</th>
+      <th>{{'accounts-list.balance' | translate}}</th>
     </tr>
     </thead>
     <tbody>
@@ -14,8 +14,6 @@
     </tr>
     </tbody>
   </table>
-  <button class="btn btn-sm btn-outline-primary" (click)="previous()" *ngIf="resultPage.pageNumber !== 0">Previous
-  </button>
-  <button class="btn btn-sm btn-outline-primary float-right" (click)="next()" *ngIf="resultPage.pageNumber < resultPage.totalPages - 1">Next
-  </button>
+  <button class="btn btn-sm btn-outline-primary" (click)="previous()" *ngIf="resultPage.pageNumber !== 0">{{'accounts-list.previous' | translate}}</button>
+  <button class="btn btn-sm btn-outline-primary float-right" (click)="next()" *ngIf="resultPage.pageNumber < resultPage.totalPages - 1">{{'accounts-list.next' | translate}}</button>
 </div>
