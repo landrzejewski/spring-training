@@ -1,0 +1,20 @@
+<div class="form-disposition">
+  <h1 class="text-center">Disposition</h1>
+  <div class="form-group">
+    <label for="accountNumber">Account number:</label>
+    <input id="accountNumber" class="form-control" placeholder="Enter account number" [(ngModel)]="disposition.accountNumber">
+  </div>
+  <div class="form-group">
+    <label for="funds">Funds:</label>
+    <input id="funds" class="form-control" placeholder="Enter funds" [(ngModel)]="disposition.funds">
+  </div>
+  <div class="form-group">
+    <label>Type:</label>
+    <select name="operationName" class="form-control" [(ngModel)]="disposition.operationName">
+      <option [value]="'deposit'">Deposit</option>
+      <option [value]="'withdraw'">Withdraw</option>
+    </select>
+  </div>
+  <button type="button" class="btn btn-danger" (click)="showAccounts()">Cancel</button>
+  <button type="button" class="btn btn-primary" (click)="confirm()">Confirm</button>
+</div>

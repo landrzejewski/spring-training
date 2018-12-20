@@ -1,0 +1,21 @@
+<button class="btn btn-outline-primary btn-sm float-right" (click)="createAccount()">Create account</button>
+<div *ngIf="resultPage">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Account number</th>
+      <th>Balance</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let account of resultPage.data">
+      <td>{{account.number}}</td>
+      <td>{{account.balance}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-sm btn-outline-primary" (click)="previous()" *ngIf="resultPage.pageNumber !== 0">Previous
+  </button>
+  <button class="btn btn-sm btn-outline-primary float-right" (click)="next()" *ngIf="resultPage.pageNumber < resultPage.totalPages - 1">Next
+  </button>
+</div>
