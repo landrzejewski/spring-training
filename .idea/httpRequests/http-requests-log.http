@@ -1,0 +1,339 @@
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2018-12-21T094627.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2018-12-20T073746.404.html
+
+###
+
+POST http://localhost:8080/api/v1/dispositions
+Content-Type: application/json
+
+{
+  "funds": 10000,
+  "accountNumber": "00000000000000000000000001",
+  "operationName": "deposit"
+
+}
+
+###
+
+GET http://localhost:8080/api/v1/accounts
+Accept: application/json
+
+<> 2018-12-20T073050.200.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts/1
+Accept: application/json
+
+<> 2018-12-20T073049.200.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2018-12-20T073047.201.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts
+Accept: application/json
+
+<> 2018-12-19T043307.200.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2018-12-19T035914.201.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts/1
+Accept: application/json
+
+<> 2018-12-19T035715.200.json
+
+###
+
+POST http://localhost:8080/api/v1/dispositions
+Content-Type: application/json
+
+{
+  "funds": 10000,
+  "accountNumber": "00000000000000000000000001",
+  "operationName": "deposit"
+
+}
+
+###
+
+GET http://localhost:8080/api/v1/accounts
+Accept: application/json
+
+<> 2018-12-19T035541.200.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts/1
+Accept: application/json
+
+<> 2018-12-19T035538.200.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2018-12-19T035535.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2018-12-19T035404.500.html
+
+###
+
+GET http://localhost:8080/api/v1/accounts
+Accept: application/json
+
+<> 2018-12-19T034347.200.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2018-12-19T034344.201.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts
+Accept: application/json
+
+<> 2018-12-19T034341.200.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts/1
+Accept: application/json
+
+<> 2018-12-19T034338.404.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts
+Accept: application/json
+
+<> 2018-12-19T034013.500.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2018-12-19T034002.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2018-12-19T032820.500.html
+
+###
+
+GET http://localhost:8080/api/v1/accounts
+Accept: application/json
+
+<> 2018-12-19T032603.500.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2018-12-19T032601.201.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts
+Accept: application/json
+
+<> 2018-12-19T031004.500.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2018-12-19T031001.201.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts
+Accept: application/json
+
+<> 2018-12-19T030900.500.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts/1
+Accept: application/json
+
+<> 2018-12-19T030856.200.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2018-12-19T030855.201.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts/1
+Accept: application/json
+
+<> 2018-12-19T030023.200.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2018-12-19T030021.201.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts/1
+Accept: application/json
+
+<> 2018-12-19T025147.200.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts/1
+Accept: application/json
+
+<> 2018-12-19T022308.404.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts/1
+Accept: application/xml
+
+<> 2018-12-19T022238.404.html
+
+###
+
+GET http://localhost:8080/api/v1/accounts/1
+Accept: application/xml
+
+<> 2018-12-19T021438.200.xml
+
+###
+
+POST http://localhost:8080/api/v1/dispositions
+Content-Type: application/json
+
+{
+  "funds": 10000,
+  "accountNumber": "00000000000000000000000001",
+  "operationName": "deposit"
+
+}
+
+###
+
+GET http://localhost:8080/api/v1/accounts
+Accept: application/json
+
+<> 2018-12-19T021428.200.json
+
+###
+
+GET http://localhost:8080/api/v1/accounts/1
+Accept: application/xml
+
+<> 2018-12-19T021423.200.xml
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2018-12-19T021420.201.json
+
+###
+
+GET http://localhost:8080/bank_war/api/v1/accounts/1
+Accept: application/xml
+
+###
+
+GET http://localhost:8080/bank_war/api/v1/accounts/2
+Accept: application/xml
+
+<> 2018-12-19T121911.500.html
+
+###
+
+POST http://localhost:8080/bank_war/api/v1/accounts
+
+<> 2018-12-19T121507.201.xml
+
+###
+
+GET http://localhost:8080/bank_war/api/v1/accounts/1
+Accept: application/xml
+
+<> 2018-12-19T121319.200.xml
+
+###
+
+POST http://localhost:8080/bank_war/api/v1/accounts
+
+<> 2018-12-19T121315.201.xml
+
+###
+
+GET http://localhost:8080/bank_war/api/v1/accounts/1
+Accept: application/xml
+
+<> 2018-12-19T121300.406.html
+
+###
+
+GET http://localhost:8080/bank_war/api/v1/accounts/1
+Accept: application/xml
+
+<> 2018-12-19T121213.406.html
+
+###
+
+GET http://localhost:8080/bank_war/api/v1/accounts/1
+Accept: application/json
+
+<> 2018-12-19T121120.200.json
+
+###
+
+POST http://localhost:8080/bank_war/api/v1/accounts
+
+<> 2018-12-19T121034.201.json
+
+###
+
