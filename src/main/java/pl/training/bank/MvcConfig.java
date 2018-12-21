@@ -31,18 +31,6 @@ public class MvcConfig implements WebMvcConfigurer {
     }
 
     @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("*.html", "*.js", "*.css")
-                .addResourceLocations("/");
-        registry.addResourceHandler("/assets/i18n/*.json")
-                .addResourceLocations("/assets/i18n/");
-        registry.addResourceHandler("swagger-ui.html")
-                .addResourceLocations("classpath:/META-INF/resources/");
-        registry.addResourceHandler("/webjars/**")
-                .addResourceLocations("classpath:/META-INF/resources/webjars/");
-    }
-
-    @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/v1/**")
                 .allowedHeaders("*")
