@@ -26,6 +26,7 @@ public class UserService implements UserDetailsService {
         Role role = getDefaultRole();
         user.setRoles(Set.of(role));
         encodePassword(user);
+        user.setEnabled(true);
         userRepository.saveAndFlush(user);
     }
 

@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.*;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
@@ -21,6 +22,9 @@ public class OAuthConfig {
         @Autowired
         @Setter
         private AuthenticationManager authenticationManagerBean;
+        @Autowired
+        @Setter
+        private PasswordEncoder passwordEncoder;
 
         @Override
         public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
@@ -29,7 +33,7 @@ public class OAuthConfig {
 
         @Override
         public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
-            security.allowFormAuthenticationForClients();
+            security.allowFormAuthenticationForClients().passwordEncoder(passwordEncoder);
         }
 
         @Override
@@ -51,7 +55,7 @@ public class OAuthConfig {
         public void configure(HttpSecurity http) throws Exception {
             http.authorizeRequests()
                     .antMatchers(HttpMethod.POST, "/api/v1/users").permitAll()
-                    .antMatchers("/api/v1/**").hasRole("ADMIN");
+                    .antMatchers("/api/v1/**").hasRole("USER");
         }
 
     }

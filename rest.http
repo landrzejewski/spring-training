@@ -1,5 +1,6 @@
 POST http://localhost:8080/api/v1/accounts
 Content-Type: application/json
+Authorization: bearer e46f3b61-cda3-49ea-8096-cc13ad0c9b57
 
 ###
 
@@ -38,5 +39,11 @@ POST http://localhost:8080/oauth/token
 Content-Type: application/x-www-form-urlencoded
 
 username=admin&password=admin&client_id=bank&grant_type=password
+
+###
+
+GET http://localhost:8080/api/v1/users/active
+Accept: application/json
+Authorization: bearer 256b78c5-b200-4cf5-9cff-970ec386bc13
 
 ###
