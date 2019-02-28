@@ -1,3 +1,213 @@
+GET http://localhost:8080/api/v1/users/active
+Accept: application/json
+Authorization: bearer 256b78c5-b200-4cf5-9cff-970ec386bc13
+
+<> 2019-02-28T124800.200.json
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2019-02-28T124708.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Authorization: bearer e46f3b61-cda3-49ea-8096-cc13ad0c9b57
+
+<> 2019-02-28T123723.201.json
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2019-02-28T123714.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2019-02-28T123700.400.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Authorization: bearer 5b612358-f564-4318-89b1-1e9bf79d8544
+
+<> 2019-02-28T123557.403.json
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2019-02-28T123537.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Authorization: bearer bf7be2e8-f0ca-439e-8946-f23ec732f98f
+
+<> 2019-02-28T123447.403.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Authorization: bearer bf7be2e8-f0ca-439e-8946-f23ec732f98f
+
+<> 2019-02-28T123440.403.json
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2019-02-28T123420.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2019-02-28T122855.400.json
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2019-02-28T122557.401.json
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2019-02-28T122059.401.json
+
+###
+
+POST http://localhost:8080/ouath/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2019-02-28T122029.404.json
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+<> 2019-02-28T121915.500.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2019-02-28T121615.401.json
+
+###
+
 POST http://localhost:8080/api/v1/accounts
 Content-Type: application/json
 
@@ -194,146 +404,6 @@ GET http://localhost:8080/api/v1/accounts/1
 Accept: application/json
 
 <> 2018-12-19T030856.200.json
-
-###
-
-POST http://localhost:8080/api/v1/accounts
-Content-Type: application/json
-
-<> 2018-12-19T030855.201.json
-
-###
-
-GET http://localhost:8080/api/v1/accounts/1
-Accept: application/json
-
-<> 2018-12-19T030023.200.json
-
-###
-
-POST http://localhost:8080/api/v1/accounts
-Content-Type: application/json
-
-<> 2018-12-19T030021.201.json
-
-###
-
-GET http://localhost:8080/api/v1/accounts/1
-Accept: application/json
-
-<> 2018-12-19T025147.200.json
-
-###
-
-GET http://localhost:8080/api/v1/accounts/1
-Accept: application/json
-
-<> 2018-12-19T022308.404.json
-
-###
-
-GET http://localhost:8080/api/v1/accounts/1
-Accept: application/xml
-
-<> 2018-12-19T022238.404.html
-
-###
-
-GET http://localhost:8080/api/v1/accounts/1
-Accept: application/xml
-
-<> 2018-12-19T021438.200.xml
-
-###
-
-POST http://localhost:8080/api/v1/dispositions
-Content-Type: application/json
-
-{
-  "funds": 10000,
-  "accountNumber": "00000000000000000000000001",
-  "operationName": "deposit"
-
-}
-
-###
-
-GET http://localhost:8080/api/v1/accounts
-Accept: application/json
-
-<> 2018-12-19T021428.200.json
-
-###
-
-GET http://localhost:8080/api/v1/accounts/1
-Accept: application/xml
-
-<> 2018-12-19T021423.200.xml
-
-###
-
-POST http://localhost:8080/api/v1/accounts
-Content-Type: application/json
-
-<> 2018-12-19T021420.201.json
-
-###
-
-GET http://localhost:8080/bank_war/api/v1/accounts/1
-Accept: application/xml
-
-###
-
-GET http://localhost:8080/bank_war/api/v1/accounts/2
-Accept: application/xml
-
-<> 2018-12-19T121911.500.html
-
-###
-
-POST http://localhost:8080/bank_war/api/v1/accounts
-
-<> 2018-12-19T121507.201.xml
-
-###
-
-GET http://localhost:8080/bank_war/api/v1/accounts/1
-Accept: application/xml
-
-<> 2018-12-19T121319.200.xml
-
-###
-
-POST http://localhost:8080/bank_war/api/v1/accounts
-
-<> 2018-12-19T121315.201.xml
-
-###
-
-GET http://localhost:8080/bank_war/api/v1/accounts/1
-Accept: application/xml
-
-<> 2018-12-19T121300.406.html
-
-###
-
-GET http://localhost:8080/bank_war/api/v1/accounts/1
-Accept: application/xml
-
-<> 2018-12-19T121213.406.html
-
-###
-
-GET http://localhost:8080/bank_war/api/v1/accounts/1
-Accept: application/json
-
-<> 2018-12-19T121120.200.json
-
-###
-
-POST http://localhost:8080/bank_war/api/v1/accounts
-
-<> 2018-12-19T121034.201.json
 
 ###
 
