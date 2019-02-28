@@ -24,7 +24,7 @@ public class CORSFilter implements Filter {
     private static final String ALLOWED_EXPOSED_HEADERS = "Location";
     private static final String ALLOWED_METHODS = "GET,POST,PUT,PATCH,,DELETE,OPTIONS";
 
-    @Value("${platform.allowed-origin}")
+    @Value("${allowed-origin}")
     @Setter
     private String allowedOrigin;
 
