@@ -1,9 +1,16 @@
 package pl.training.bank;
 
 import lombok.Setter;
+import org.modelmapper.spi.Tokens;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.Resource;
 import org.springframework.http.HttpMethod;
+import org.springframework.jdbc.datasource.init.DataSourceInitializer;
+import org.springframework.jdbc.datasource.init.DatabasePopulator;
+import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -11,9 +18,31 @@ import org.springframework.security.oauth2.config.annotation.configurers.ClientD
 import org.springframework.security.oauth2.config.annotation.web.configuration.*;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
+import org.springframework.security.oauth2.provider.token.TokenStore;
+import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
+
+import javax.sql.DataSource;
 
 @Configuration
 public class OAuthConfig {
+
+    @Value("classpath:token-store-schema.sql")
+    private Resource schemaScript;
+
+    @Bean
+    public DatabasePopulator databasePopulator() {
+        ResourceDatabasePopulator populator = new ResourceDatabasePopulator();
+        populator.addScript(schemaScript);
+        return populator;
+    }
+
+    @Bean
+    public DataSourceInitializer dataSourceInitializer(DataSource dataSource, DatabasePopulator databasePopulator) {
+        DataSourceInitializer initializer = new DataSourceInitializer();
+        initializer.setDataSource(dataSource);
+        initializer.setDatabasePopulator(databasePopulator);
+        return initializer;
+    }
 
     @EnableAuthorizationServer
     @Configuration
@@ -25,10 +54,18 @@ public class OAuthConfig {
         @Autowired
         @Setter
         private PasswordEncoder passwordEncoder;
+        @Autowired
+        @Setter
+        private TokenStore tokenStore;
+
+        @Bean
+        public TokenStore tokenStore(DataSource dataSource) {
+            return new JdbcTokenStore(dataSource);
+        }
 
         @Override
         public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
-            endpoints.authenticationManager(authenticationManagerBean);
+            endpoints.tokenStore(tokenStore).authenticationManager(authenticationManagerBean);
         }
 
         @Override

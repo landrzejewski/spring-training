@@ -44,6 +44,6 @@ username=admin&password=admin&client_id=bank&grant_type=password
 
 GET http://localhost:8080/api/v1/users/active
 Accept: application/json
-Authorization: bearer 256b78c5-b200-4cf5-9cff-970ec386bc13
+Authorization: bearer 0bd12394-81f2-4245-9241-ba8b24274d4e
 
 ###

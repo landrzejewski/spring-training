@@ -1,3 +1,75 @@
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2019-02-28T020544.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2019-02-28T020517.400.json
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2019-02-28T020454.400.json
+
+###
+
+GET http://localhost:8080/api/v1/users/active
+Accept: application/json
+Authorization: bearer 0bd12394-81f2-4245-9241-ba8b24274d4e
+
+<> 2019-02-28T020012.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users/active
+Accept: application/json
+Authorization: bearer 0bd12394-81f2-4245-9241-ba8b24274d4e
+
+<> 2019-02-28T015620.200.json
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2019-02-28T015610.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+###
+
 GET http://localhost:8080/api/v1/users/active
 Accept: application/json
 Authorization: bearer 256b78c5-b200-4cf5-9cff-970ec386bc13
@@ -348,62 +420,6 @@ GET http://localhost:8080/api/v1/accounts
 Accept: application/json
 
 <> 2018-12-19T034013.500.json
-
-###
-
-POST http://localhost:8080/api/v1/accounts
-Content-Type: application/json
-
-<> 2018-12-19T034002.201.json
-
-###
-
-POST http://localhost:8080/api/v1/accounts
-Content-Type: application/json
-
-<> 2018-12-19T032820.500.html
-
-###
-
-GET http://localhost:8080/api/v1/accounts
-Accept: application/json
-
-<> 2018-12-19T032603.500.json
-
-###
-
-POST http://localhost:8080/api/v1/accounts
-Content-Type: application/json
-
-<> 2018-12-19T032601.201.json
-
-###
-
-GET http://localhost:8080/api/v1/accounts
-Accept: application/json
-
-<> 2018-12-19T031004.500.json
-
-###
-
-POST http://localhost:8080/api/v1/accounts
-Content-Type: application/json
-
-<> 2018-12-19T031001.201.json
-
-###
-
-GET http://localhost:8080/api/v1/accounts
-Accept: application/json
-
-<> 2018-12-19T030900.500.json
-
-###
-
-GET http://localhost:8080/api/v1/accounts/1
-Accept: application/json
-
-<> 2018-12-19T030856.200.json
 
 ###
 
