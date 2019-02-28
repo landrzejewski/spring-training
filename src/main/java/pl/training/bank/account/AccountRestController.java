@@ -12,7 +12,7 @@ import java.net.URI;
 import java.util.List;
 
 @RequiredArgsConstructor
-@RequestMapping(value = "/api/v1/accounts")
+@RequestMapping(value = "${baseUrl}/accounts")
 @RestController
 public class AccountRestController {
 

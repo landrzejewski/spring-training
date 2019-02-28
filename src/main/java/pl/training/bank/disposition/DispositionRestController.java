@@ -12,7 +12,7 @@ import pl.training.bank.common.mapper.Mapper;
 
 import javax.validation.Valid;
 
-@RequestMapping("/api/v1/dispositions")
+@RequestMapping("${baseUrl}/dispositions")
 @RequiredArgsConstructor
 @RestController
 public class DispositionRestController {

@@ -30,12 +30,4 @@ public class MvcConfig implements WebMvcConfigurer {
                 .build();
     }
 
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/api/v1/**")
-                .allowedHeaders("*")
-                .allowedMethods("*")
-                .allowedOrigins("http://localhost:4200");
-    }
-
 }
