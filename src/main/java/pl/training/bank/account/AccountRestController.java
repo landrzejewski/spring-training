@@ -45,4 +45,11 @@ public class AccountRestController {
         return ResponseEntity.ok(pageDto);
     }
 
+    @RequestMapping(value = "active", method = RequestMethod.DELETE)
+    public ResponseEntity<Void> logout(@RequestHeader("Authorization") String authorizationHeader) {
+        String tokenValue = authorizationHeader.replace("bearer", "").trim();
+        accountService.logout(tokenValue);
+        return ResponseEntity.noContent().build();
+    }
+
 }

@@ -91,7 +91,7 @@ public class OAuthConfig {
                 detailsServiceBuilder
                         .withClient("bank")
                         .authorizedGrantTypes("password")
-                        .scopes("web")
+                        .scopes("public")
                         .accessTokenValiditySeconds(10 * 60);
             }
 
