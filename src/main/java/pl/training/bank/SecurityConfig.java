@@ -35,10 +35,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth/*.inMemoryAuthentication()
                 .withUser("admin").password(passwordEncoder.encode("admin")).roles("ADMIN")*/
-            .jdbcAuthentication()
+            /*.jdbcAuthentication()
                 .dataSource(dataSource)
                 .usersByUsernameQuery("select login,password,enabled from client where login = ?")
-                .authoritiesByUsernameQuery("select login,role from client where login = ?");
+                .authoritiesByUsernameQuery("select login,role from client where login = ?");*/
+            .ldapAuthentication()
+                .userSearchBase("ou=people")
+                .userSearchFilter("(uid={0})")
+                .groupSearchBase("ou=roles")
+                .groupSearchFilter("(member={0})")
+                .contextSource()
+                .root("dc=springframework,dc=org")
+                .ldif("users.ldif");
     }
 
     @Override
