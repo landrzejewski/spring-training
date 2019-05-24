@@ -4,8 +4,12 @@ import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.transaction.annotation.Transactional;
 import pl.training.bank.common.ResultPage;
+
+import javax.annotation.security.RolesAllowed;
 
 @Transactional
 @RequiredArgsConstructor
@@ -16,6 +20,9 @@ public class AccountService {
     @NonNull
     private AccountRepository accountRepository;
 
+    //@RolesAllowed("ABC")
+    //@Secured("ABC")
+    @PreAuthorize("hasAnyRole('ADMIN')")
     public Account create() {
         String accountNumber = accountNumberGenerator.next();
         Account account = new Account(accountNumber);
