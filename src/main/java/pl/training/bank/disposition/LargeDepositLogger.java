@@ -12,7 +12,7 @@ public class LargeDepositLogger implements ApplicationEventPublisherAware {
 
     private ApplicationEventPublisher publisher;
 
-    @AfterReturning("execution(void pl.training.bank.disposition.DispositionService.process(..)) && args(disposition)")
+    @AfterReturning("pl.training.bank.common.Pointcuts.process() && args(disposition)")
     public void onLargeDeposit(Disposition disposition) {
         if (disposition.getFunds() >= LARGE_DEPOSIT) {
             LargeDepositEvent largeDepositEvent = new LargeDepositEvent(this);
