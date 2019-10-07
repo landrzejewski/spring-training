@@ -12,7 +12,7 @@ public class DispositionLogger {
     public void process() {
     }
 
-    @Before("execution(void pl.training.bank.disposition.DispositionService.process(..)) && args(disposition)")
+    @Before("process() && args(disposition)")
     public void onStart(Disposition disposition) {
         System.out.format("%s\n%s\n", SEPARATOR, disposition);
     }
