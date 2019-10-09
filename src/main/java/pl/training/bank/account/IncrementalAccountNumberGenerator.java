@@ -10,16 +10,15 @@ public class IncrementalAccountNumberGenerator implements AccountNumberGenerator
 
     private AtomicLong counter = new AtomicLong();
 
-    public IncrementalAccountNumberGenerator(AccountRepository accountRepository) {
-        String lastAccountNumber = accountRepository.getLastAccountNumber();
-        if (lastAccountNumber != null) {
-            counter = new AtomicLong(parseLong(lastAccountNumber));
-        }
-    }
-
     @Override
     public String next() {
         return String.format(ACCOUNT_NUMBER_FORMAT, counter.incrementAndGet());
+    }
+
+    public void setCurrentAccountNumber(String accountNumber) {
+        if (accountNumber != null) {
+            counter = new AtomicLong(parseLong(accountNumber));
+        }
     }
 
 }

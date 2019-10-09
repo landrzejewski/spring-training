@@ -8,7 +8,7 @@ public class AccountConfig {
 
     @Bean
     public AccountNumberGenerator accountNumberGenerator(AccountRepository accountRepository) {
-        return new IncrementalAccountNumberGenerator(accountRepository);
+        return new JpaIncrementalAccountNumberGenerator(accountRepository);
     }
 
     @Bean
