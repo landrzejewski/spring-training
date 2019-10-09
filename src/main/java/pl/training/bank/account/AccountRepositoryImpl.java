@@ -5,7 +5,6 @@ import lombok.Setter;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-
 public class AccountRepositoryImpl implements AccountRepositoryCustom {
     @Setter
     @PersistenceContext
