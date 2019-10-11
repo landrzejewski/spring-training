@@ -89,6 +89,7 @@ public class OAuthConfig {
                 new JdbcClientDetailsService(dataSource).loadClientByClientId("bank");
             } catch (Exception ignored) {
                 detailsServiceBuilder
+                        .dataSource(dataSource)
                         .withClient("bank")
                         .authorizedGrantTypes("password")
                         .scopes("public")
