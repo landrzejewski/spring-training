@@ -86,7 +86,7 @@ public class OAuthConfig {
 
             JdbcClientDetailsServiceBuilder detailsServiceBuilder = clients.jdbc(dataSource);
             try {
-                new JdbcClientDetailsService(dataSource).loadClientByClientId("platform");
+                new JdbcClientDetailsService(dataSource).loadClientByClientId("bank");
             } catch (Exception ignored) {
                 detailsServiceBuilder
                         .withClient("bank")
