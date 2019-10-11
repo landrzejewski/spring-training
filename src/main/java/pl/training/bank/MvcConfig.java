@@ -2,7 +2,7 @@ package pl.training.bank;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import pl.training.bank.common.mapper.Mapper;
 import pl.training.bank.common.mapper.ModelMapperAdapter;
 import springfox.documentation.spring.web.plugins.Docket;
@@ -13,7 +13,7 @@ import static springfox.documentation.spi.DocumentationType.SWAGGER_2;
 
 @EnableSwagger2
 @Configuration
-public class MvcConfig extends WebMvcConfigurerAdapter {
+public class MvcConfig implements WebMvcConfigurer {
 
     @Bean
     public Mapper mapper() {
