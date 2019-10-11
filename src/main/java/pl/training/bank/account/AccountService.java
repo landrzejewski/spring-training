@@ -18,8 +18,6 @@ public class AccountService {
     private AccountNumberGenerator accountNumberGenerator;
     @NonNull
     private AccountRepository accountRepository;
-    @NonNull
-    private TokenStore tokenStore;
 
     public Account create() {
         String accountNumber = accountNumberGenerator.next();
@@ -45,12 +43,6 @@ public class AccountService {
     public void update(Account account) {
         getByNumber(account.getNumber());
         accountRepository.save(account);
-    }
-
-    public void logout(String tokenValue) {
-        OAuth2AccessToken token = tokenStore.readAccessToken(tokenValue);
-        tokenStore.removeRefreshToken(token.getRefreshToken());
-        tokenStore.removeAccessToken(token);
     }
 
 }
