@@ -5,7 +5,7 @@
 
     <jee:local-slsb id="timeProvider" jndi-name="java:global/bank-1.0-SNAPSHOT/TimeServiceProvider" business-interface="pl.training.bank.legacy.TimeService"/>
 
-    <jee:jndi-lookup id="connectionFactory" jndi-name="java:/ConnectionFactory" expected-type="javax.jms.ConnectionFactory" />
+<!--    <jee:jndi-lookup id="connectionFactory" jndi-name="java:/ConnectionFactory" expected-type="javax.jms.ConnectionFactory" />-->
 
     <jee:jndi-lookup id="bankQueue" jndi-name="jboss/exported/jms/queue/Bank" expected-type="javax.jms.Queue"/>
 

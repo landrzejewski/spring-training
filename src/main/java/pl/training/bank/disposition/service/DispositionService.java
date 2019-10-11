@@ -1,6 +1,7 @@
 package pl.training.bank.disposition.service;
 
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
 import pl.training.bank.account.entity.Account;
 import pl.training.bank.account.services.AccountNotFoundException;
@@ -14,6 +15,7 @@ import java.util.Map;
 
 @Transactional
 @AllArgsConstructor
+@NoArgsConstructor
 public class DispositionService {
 
     private AccountRepository accountRepository;

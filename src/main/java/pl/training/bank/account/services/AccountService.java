@@ -1,6 +1,7 @@
 package pl.training.bank.account.services;
 
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.extern.java.Log;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -13,6 +14,7 @@ import pl.training.bank.generator.service.AccountNumberGenerator;
 @Transactional
 @Log
 @AllArgsConstructor
+@NoArgsConstructor
 public class AccountService {
 
     private AccountNumberGenerator accountNumberGenerator;
