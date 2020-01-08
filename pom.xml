@@ -11,7 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <hibernate.validator>6.0.14.Final</hibernate.validator>
+        <hibernate.validator>6.1.0.Final</hibernate.validator>
     </properties>
 
     <build>
