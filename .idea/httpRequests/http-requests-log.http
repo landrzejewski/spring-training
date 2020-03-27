@@ -1,3 +1,209 @@
+GET http://localhost:8080/api/v1/users/active
+Accept: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODUzNjAwNzQsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6ImRiY2E4YmY4LTk4YWItNDQwZi04YWQ1LWUyZGJlOGQ4NjY5MCIsImNsaWVudF9pZCI6ImJhbmsiLCJzY29wZSI6WyJwdWJsaWMiXX0.PwISKCtEz-FboSsaehZ1goVr1u2VGNz2lP-Rh1eZ4Sw
+
+<> 2020-03-27T025248.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+###
+
+GET http://localhost:8080/api/v1/users/active
+Accept: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODUzNjAwNzQsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6ImRiY2E4YmY4LTk4YWItNDQwZi04YWQ1LWUyZGJlOGQ4NjY5MCIsImNsaWVudF9pZCI6ImJhbmsiLCJzY29wZSI6WyJwdWJsaWMiXX0.PwISKCtEz-FboSsaehZ1goVr1u2VGNz2lP-Rh1eZ4Sw
+
+<> 2020-03-27T025155.500.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODUzNjAwNzQsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6ImRiY2E4YmY4LTk4YWItNDQwZi04YWQ1LWUyZGJlOGQ4NjY5MCIsImNsaWVudF9pZCI6ImJhbmsiLCJzY29wZSI6WyJwdWJsaWMiXX0.PwISKCtEz-FboSsaehZ1goVr1u2VGNz2lP-Rh1eZ4Sw
+
+<> 2020-03-27T024947.201.json
+
+###
+
+GET http://localhost:8080/api/v1/users/active
+Accept: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODUzNjAwNzQsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6ImRiY2E4YmY4LTk4YWItNDQwZi04YWQ1LWUyZGJlOGQ4NjY5MCIsImNsaWVudF9pZCI6ImJhbmsiLCJzY29wZSI6WyJwdWJsaWMiXX0.PwISKCtEz-FboSsaehZ1goVr1u2VGNz2lP-Rh1eZ4Sw
+
+<> 2020-03-27T024919.500.json
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2020-03-27T024754.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+###
+
+GET http://localhost:8080/api/v1/users/active
+Accept: application/json
+
+<> 2020-03-27T024745.401.json
+
+###
+
+GET http://localhost:8080/api/v1/users/active
+Accept: application/json
+Authorization: bearer 419ac2aa-908d-4005-b771-f08f81d42b86
+
+<> 2020-03-27T024729.401.json
+
+###
+
+GET http://localhost:8080/api/v1/users/active
+Accept: application/json
+Authorization: bearer 419ac2aa-908d-4005-b771-f08f81d42b86
+
+<> 2020-03-27T022533.401.json
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2020-03-27T022531.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Authorization: bearer 419ac2aa-908d-4005-b771-f08f81d42b86
+
+<> 2020-03-27T022237.201.json
+
+###
+
+GET http://localhost:8080/api/v1/users/active
+Accept: application/json
+Authorization: bearer 419ac2aa-908d-4005-b771-f08f81d42b86
+
+<> 2020-03-27T022215.200.json
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2020-03-27T022202.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users/active
+Accept: application/json
+
+<> 2020-03-27T022148.401.json
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2020-03-27T022058.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=admin&client_id=bank&grant_type=password
+
+<> 2020-03-27T021816.400.json
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "login": "admin",
+  "passwoord": "admin"
+}
+
+<> 2020-03-27T020958.500.json
+
+###
+
+POST http://localhost:8080/api/v1/dispositions
+Content-Type: application/json
+
+{
+  "funds": 10000,
+  "accountNumber": "00000000000000000000000001",
+  "operationName": "deposit"
+
+}
+
+<> 2020-03-27T020900.401.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+
+<> 2020-03-27T020845.401.json
+
+###
+
 POST http://localhost:8080/api/v1/accounts
 Content-Type: application/json
 
@@ -194,146 +400,6 @@ GET http://localhost:8080/api/v1/accounts/1
 Accept: application/json
 
 <> 2018-12-19T030856.200.json
-
-###
-
-POST http://localhost:8080/api/v1/accounts
-Content-Type: application/json
-
-<> 2018-12-19T030855.201.json
-
-###
-
-GET http://localhost:8080/api/v1/accounts/1
-Accept: application/json
-
-<> 2018-12-19T030023.200.json
-
-###
-
-POST http://localhost:8080/api/v1/accounts
-Content-Type: application/json
-
-<> 2018-12-19T030021.201.json
-
-###
-
-GET http://localhost:8080/api/v1/accounts/1
-Accept: application/json
-
-<> 2018-12-19T025147.200.json
-
-###
-
-GET http://localhost:8080/api/v1/accounts/1
-Accept: application/json
-
-<> 2018-12-19T022308.404.json
-
-###
-
-GET http://localhost:8080/api/v1/accounts/1
-Accept: application/xml
-
-<> 2018-12-19T022238.404.html
-
-###
-
-GET http://localhost:8080/api/v1/accounts/1
-Accept: application/xml
-
-<> 2018-12-19T021438.200.xml
-
-###
-
-POST http://localhost:8080/api/v1/dispositions
-Content-Type: application/json
-
-{
-  "funds": 10000,
-  "accountNumber": "00000000000000000000000001",
-  "operationName": "deposit"
-
-}
-
-###
-
-GET http://localhost:8080/api/v1/accounts
-Accept: application/json
-
-<> 2018-12-19T021428.200.json
-
-###
-
-GET http://localhost:8080/api/v1/accounts/1
-Accept: application/xml
-
-<> 2018-12-19T021423.200.xml
-
-###
-
-POST http://localhost:8080/api/v1/accounts
-Content-Type: application/json
-
-<> 2018-12-19T021420.201.json
-
-###
-
-GET http://localhost:8080/bank_war/api/v1/accounts/1
-Accept: application/xml
-
-###
-
-GET http://localhost:8080/bank_war/api/v1/accounts/2
-Accept: application/xml
-
-<> 2018-12-19T121911.500.html
-
-###
-
-POST http://localhost:8080/bank_war/api/v1/accounts
-
-<> 2018-12-19T121507.201.xml
-
-###
-
-GET http://localhost:8080/bank_war/api/v1/accounts/1
-Accept: application/xml
-
-<> 2018-12-19T121319.200.xml
-
-###
-
-POST http://localhost:8080/bank_war/api/v1/accounts
-
-<> 2018-12-19T121315.201.xml
-
-###
-
-GET http://localhost:8080/bank_war/api/v1/accounts/1
-Accept: application/xml
-
-<> 2018-12-19T121300.406.html
-
-###
-
-GET http://localhost:8080/bank_war/api/v1/accounts/1
-Accept: application/xml
-
-<> 2018-12-19T121213.406.html
-
-###
-
-GET http://localhost:8080/bank_war/api/v1/accounts/1
-Accept: application/json
-
-<> 2018-12-19T121120.200.json
-
-###
-
-POST http://localhost:8080/bank_war/api/v1/accounts
-
-<> 2018-12-19T121034.201.json
 
 ###
 
